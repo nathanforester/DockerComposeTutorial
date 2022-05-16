@@ -4,7 +4,7 @@ sudo apt update
 
 sudo apt install python3-pip -y
 
-sudo apt install docker -y
+sudo apt install docker.io -y
 
 sudo apt install docker-compose -y
 
