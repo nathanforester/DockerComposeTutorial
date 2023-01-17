@@ -10,35 +10,14 @@ import sys
 def index():
     return render_template('index.html')
 
-@app.route('/signUp', methods=['GET', 'POST'])
-# def profile():
-#     formDataName = request.form.get('name')
-#     formDataPasswordA = request.form.get('password')
-#     formDataPasswordB = request.form.get('2password')
-#     if formDataPasswordA != formDataPasswordB:
-#         return redirect(url_for('signUp'))
-#     else:
-#         #do database logic here
-#         return render_template('BirthDate.html')
-
-# @app.route('/signIn')
-# def signIn():
-#     formDataName = request.form.get('name')
-#     formDataPassword = request.form.get('password')
-#     #logic to search database and match passwords here, if not return redirect
-#     #if successful, return birthdate page
 
 @app.route('/date', methods=['GET', 'POST'])
 def date():
     formData = request.form.get('date')
     formData = str(formData)
-    birthDate = requests.post('http' + formData)
-    print(birthDate.text, file=sys.stderr)
-    print(birthDate.text, file=sys.stdout)
-    prime = requests.post('http' + formData)
-    print(prime.text, file=sys.stderr)
-    print(prime.text, file=sys.stdout)
-    print(formData, file=sys.stderr)
-    print(formData, file=sys.stdout)
-    return render_template('convertPrime.html', formData=formData, birthDate=birthDate.text, prime=prime)
+    birthDate = requests.post('http </>' + formData)
+
+    prime = requests.post('http </>' + formData)
+  
+    return render_template('convertPrime.html', formData=formData, birthDate=</>, prime=</>)
 
